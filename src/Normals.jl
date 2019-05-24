@@ -1,6 +1,19 @@
 module Normals
 
 using Images
+using LinearAlgebra
+
+function RGBSum(_in)
+    _in.r + _in.g + _in.b 
+end
+
+function ZeroOneSpaceMapping(_rgb)
+    col = [ (_rgb[1]+1.0)*0.5,  (_rgb[2]+1.0)*0.5,  1.0]
+end
+
+function IdentitySpaceMapping(_rgb)
+    _rgb
+end
 
 function NormalGen_Sobel(_img; filter=[-0.5, 0, 0.5], SpaceMapping=ZeroOneSpaceMapping)
     width, height = size(_img);
@@ -33,7 +46,10 @@ function NormalGen_Sobel(_img; filter=[-0.5, 0, 0.5], SpaceMapping=ZeroOneSpaceM
 end
 NormalGen = NormalGen_Sobel
 
+# Normal generation functions
 export NormalGen_Sobel, NormalGen
 
+# Normal data formatting functions
+export ZeroOneSpaceMapping, IdentitySpaceMapping
 
 end # module
