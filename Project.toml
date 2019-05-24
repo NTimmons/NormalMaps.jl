@@ -3,5 +3,8 @@ uuid = "7bd9a332-7e68-11e9-0d35-f9ad9f1a92d1"
 authors = ["Nicholas Timmons <ngtimmons@gmail.com>"]
 version = "0.1.0"
 
+[compat]
+julia = "1.0, 1.1"
+
 [deps]
 Images = "916415d5-f1e6-5110-898d-aaa5f9f070e0"
