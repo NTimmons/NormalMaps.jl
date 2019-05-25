@@ -1,5 +1,5 @@
 # Normals.jl
-Pakcage for generating normal maps from images using Julia.
+Package for generating and manipulating normal maps from images, using Julia.
 
 Simple Example
 ```python
