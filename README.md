@@ -1,4 +1,4 @@
-# Normals.jl
+# NormalsMaps.jl
 Package for generating and manipulating normal maps from images, using Julia.
 
 Simple Example
