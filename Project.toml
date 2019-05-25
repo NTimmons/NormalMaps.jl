@@ -1,5 +1,5 @@
-name = "Normals"
-uuid = "7bd9a332-7e68-11e9-0d35-f9ad9f1a92d1"
+name = "NormalMaps"
+uuid = "11b9c370-7f32-11e9-2601-596d25f02000"
 authors = ["Nicholas Timmons <ngtimmons@gmail.com>"]
 version = "0.1.0"
 
